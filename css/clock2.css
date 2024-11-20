@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/FACETS\ Megatron\ Dark\ Wallpaper\ Free\ Desktop\ Backgrounds.jpg);
+    background-size: cover;
+}
+.countainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, 0.4);
+    box-shadow: -5px 7px 30px 2px rgba(43, 43, 43, 0.9);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255,0.2);
+    position: relative;
+
+}
+.number{
+    width: inherit;
+    height: inherit;
+    position: relative;
+    font-size: 1.35rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.twelve{
+    position: absolute;
+    top: 0.25rem;
+    left: 50%;
+    transform: translateX(-55%);
+}
+.one{
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 4.1rem;
+}
+.two{
+    position: absolute;
+    top: 3.5rem;
+    right: 1.7rem;
+}
+.three{
+    color: white;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-60%);
+
+}
+.four{
+    position: absolute;
+    bottom: 3.6rem;
+    right: 1.6rem;
+}
+.five{
+    color: white;
+    position: absolute;
+    bottom: 1.3rem;
+    right: 4.1rem;
+}
+.six{
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.seven{
+    color: white;
+    position: absolute;
+    bottom: 1.3rem;
+    left: 4.1rem;
+}
+.eight{
+    position: absolute;
+    bottom: 3.6rem;
+    left: 1.6rem;
+}
+.nine{
+    color: white;
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-60%);
+}
+.ten{
+    position: absolute;
+    top: 3.4rem;
+    left: 1.3rem;
+}
+.eleven{
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 3.6rem;
+}
+.arrow{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow::before{
+    content: '';
+    width: 0.85rem;
+    height: 0.85rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0.25px black;
+    border-radius: 50%;
+    z-index: 10;
+}
+.arrow > div {
+    width: 0.4rem;
+    height: 5.5rem;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(69, 69, 69);
+    position: absolute;
+    bottom: 50%;
+    border-radius: 100% 100% 0 0;
+    transform-origin: bottom center;
+
+}
+.arrow > .hour{
+    height: 4rem;
+    transform: rotate(90deg);
+}
+.arrow > .minute{
+    transform: rotate(0deg);
+}
+.arrow > .second{
+    width: 0.3rem;
+    background-color: brown;
+    transform: rotate(-90deg);
+}
